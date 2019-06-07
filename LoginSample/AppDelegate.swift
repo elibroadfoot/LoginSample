@@ -16,8 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         
+        //  Customizes the navigation bar buttons.
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "GillSans-SemiBold", size: 20)!], for: UIControl.State.normal)
+        
+        //  Configures Firebase
         
         FirebaseApp.configure()
         return true
